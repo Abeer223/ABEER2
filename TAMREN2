@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner ENTER = new Scanner(System.in);
+        System.out.println("ENTER THE NUMBER "); // التمرين الأول
+        int num = ENTER.nextInt();
+                if (num > 0){
+                    System.out.println("THE NUMBER IS POSITIV ");
+                } else if (num < 0) {
+                    System.out.println("THE NUMBER IS NEGATIV ");
+
+                }
+                else {
+                    System.out.println(" THE NUMBER IS ZERO");
+                }
+
+        System.out.println("ENTER THE fir NUMBER "); // تمرين البونس
+        int a = ENTER.nextInt();
+        System.out.println("ENTER THE sec NUMBER ");
+        int b = ENTER.nextInt();
+        System.out.println("ENTER THE thi NUMBER ");
+        int c = ENTER.nextInt();
+        if (a> b && a> c){
+            System.out.println(" th maximum is " + a);
+        } else if (b>c && b>a) {
+            System.out.println(" the maximum is " + b);
+
+        }
+        else {
+            System.out.println("the maximum is : " + c);
+        }
+        System.out.println("ENTER THE NUMBER TO FINDE THE CHAR "); // السؤال الثاني
+        int i = ENTER.nextInt();
+        ENTER.nextLine();
+        System.out.println("ENTER THE TEXT PLEASE : ");
+        String tex = ENTER.nextLine();
+        char CH = tex.charAt(i);
+        System.out.println(CH);
+
+
+       System.out.println("ENTER THE TEXT PLEASE : "); // السؤال الثالث
+        String text = ENTER.nextLine();
+        System.out.println("ENTER THE CHAR TO CHECK : ");
+        String ch = ENTER.nextLine();
+        boolean t = text.contains(ch);
+        System.out.println(t);
+        if (t) {
+            System.out.println("THE TEXT INCLUDED THE CHAR");
+        }
+        else {
+            System.out.println("THE TEXT DOES NOT INCLUDED THE CHAR");
+        }
+
+
+
+
+    }
+    }
